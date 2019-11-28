@@ -1,0 +1,40 @@
+{
+    "name": "rlustosa/laravel-modulating",
+    "description": "Laravel Module management for my projects",
+    "type": "project",
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "laravel/framework": "6.0.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rupert Lustosa",
+            "email": "rupertlustosa@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RLustosa\\LaravelModulating\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RLustosa\\LaravelModulating\\LaravelModulatingServiceProvider"
+            ],
+            "aliases": {
+                "Module": "RLustosa\\LaravelModulating\\Facades\\Module"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
